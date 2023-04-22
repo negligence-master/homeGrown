@@ -1,19 +1,265 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <!--this is how we link our style sheet to the html-->
-  <!-- style sheet tell how the font should looks like, color,...etc-->
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
-
-<body>
-  Hello world
-  <!--this is how we link our js to the html-->
-  <script src="main.js"></script>
-  
-</body>
-
+<html style="--background-gradient-position: 0%;" lang="en-US">
+  <head>
+    <title>Home Grown!
+    </title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#224A7F">
+    <link rel="shortcut icon" href="/static/icon/logo.svg">
+    <link rel="manifest" href="/manifest.json">
+    
+    <link href="/main.css" rel="stylesheet">
+    
+  </head>
+  <body>
+    <div id="mount">
+      <div class="app">
+        <div class="live-navbar">
+          <div class="left-nav">
+            <a style="text-decoration: none;" href="/live/home">
+              <div class="live-logo">
+                <img src="/static/live-site/LAHACKS_Logo.svg">
+              </div>
+            </a>
+            <div class="nav-words">
+              <a style="text-decoration: none;" href="/live/home">
+                <button class="live-button selected">Home
+                </button>
+              </a>
+              
+              <a style="text-decoration: none;" href="/live/schedule">
+                <button class="live-button ">Schedule
+                </button>
+              </a>
+              <a style="text-decoration: none;" href="/live/map">
+                <button class="live-button ">Map
+                </button>
+              </a>
+              <a style="text-decoration: none;" href="/live/resources">
+                <button class="live-button ">Resources
+                </button>
+              </a>
+              <a style="text-decoration: none;" href="/live/tracks">
+                <button class="live-button ">Tracks
+                </button>
+              </a>
+              <a style="text-decoration: none;" href="/live/prizes">
+                <button class="live-button ">Prizes
+                </button>
+              </a>
+              <a style="text-decoration: none;" href="/live/faq">
+                <button class="live-button ">FAQ
+                </button>
+              </a>
+            </div>
+          </div>
+          <a href="/x/login">
+            <button class="live-login">Log In
+            </button>
+          </a>
+        </div>
+        <!-- <main class="">
+          <div class="live-home-page">
+            <div class="homeContainer">
+              <div class="leftContainer">
+                <div class="timerContainer">
+                  <div class="timerRow">
+                    <div class="timerBox">
+                      <div class="timerText">32
+                      </div>
+                      <div class="timerSubtext">Hours
+                      </div>
+                    </div>
+                    <div class="divider">:
+                    </div>
+                    <div class="timerBox">
+                      <div class="timerText">32
+                      </div>
+                      <div class="timerSubtext">Minutes
+                      </div>
+                    </div>
+                    <div class="divider">:
+                    </div>
+                    <div class="timerBox">
+                      <div class="timerText">55
+                      </div>
+                      <div class="timerSubtext">Seconds
+                      </div>
+                    </div>
+                  </div>
+                  <div class="subtitle">Until hacking ends!
+                  </div>
+                </div>
+                <div class="subContainer">
+                  <div class="bigText">WiFi
+                  </div>
+                  <div>
+                    <span style="font-weight: 500;">Network:
+                    </span>LAHACKS2023
+                  </div>
+                </div>
+                <div class="subContainer">
+                  <div class="bigText">Happening Now
+                  </div>
+                  <div class="happening">
+                    <div class="event-card workshop">
+                      <div class="event-time">1:00 am - 2:00 am
+                      </div>
+                      <div class="event-title">Recursively Prompting ChatGPT
+                      </div>
+                      <div class="event-description">
+                        <span class="workshop">Workshop
+                        </span> @ Pavilion Club A (left)
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img class="inlineDuck" src="/static/live-site/home/liveisland.svg">
+              <div class="duckImg">
+                <img src="/static/live-site/home/liveisland.svg">
+              </div>
+            </div>
+          </div>
+        </main>
+        <div id="live-site-footer">
+          <div id="_sponsors" class="spons">
+            <div class="logo-container">
+              <div class="spons-item large-size">
+                <a href="https://www.ucu.org/">
+                  <img src="/static/sponsors/ucu.png">
+                </a>
+              </div>
+            </div>
+            <div class="logo-container med-container">
+              <div class="spons-item medium-size">
+                <a href="https://cohere.com/">
+                  <img src="/static/sponsors/cohere3.png">
+                </a>
+              </div>
+              <div class="spons-item medium-size">
+                <a href="https://us.msi.com/">
+                  <img src="/static/sponsors/msi3.png">
+                </a>
+              </div>
+              <div class="spons-item medium-size">
+                <a href="https://www.medtronic.com/us-en/index.html">
+                  <img src="/static/sponsors/Medtronic.png">
+                </a>
+              </div>
+            </div>
+            <div class="logo-container">
+              <div class="spons-item small-size">
+                <a href="https://www.janestreet.com/">
+                  <img src="/static/sponsors/janestreet.png">
+                </a>
+              </div>
+              <div class="spons-item small-size">
+                <a href="https://shield.ai/">
+                  <img src="/static/sponsors/sai.png">
+                </a>
+              </div>
+              <div class="spons-item small-size">
+                <a href="https://www.xylem.com/en-us/">
+                  <img src="/static/sponsors/xylem.png">
+                </a>
+              </div>
+              <div class="spons-item small-size">
+                <a href="https://www.codepath.org/">
+                  <img src="/static/sponsors/codepath.png">
+                </a>
+              </div>
+              <div class="spons-item small-size">
+                <a href="https://www.citadel.com/">
+                  <img src="/static/sponsors/citadel.png">
+                </a>
+              </div>
+              <div class="spons-item small-size">
+                <a href="https://try.generaltask.com//">
+                  <img src="/static/sponsors/generaltask.png">
+                </a>
+              </div>
+            </div>
+            <div class="logo-container">
+              <div class="spons-item small-size">
+                <a href="https://www.figma.com/">
+                  <img src="/static/sponsors/figma.png">
+                </a>
+              </div>
+              <div class="spons-item small-size">
+                <a href="https://console.cloud.google.com/getting-started">
+                  <img src="/static/sponsors/google_cloud.png">
+                </a>
+              </div>
+              <div class="spons-item small-size" id="magicmind">
+                <a href="https://magicmind.co/">
+                  <img src="/static/sponsors/magicmind.png">
+                </a>
+              </div>
+              <div class="spons-item small-size">
+                <a href="https://www.wolframalpha.com/">
+                  <img src="/static/sponsors/wolfram.png">
+                </a>
+              </div>
+              <div class="spons-item small-size">
+                <a href="http://tgif.ucla.edu/">
+                  <img src="/static/sponsors/tgif.png">
+                </a>
+              </div>
+              <div class="spons-item small-size">
+                <a href="https://startupucla.com/">
+                  <img src="/static/sponsors/startup.png">
+                </a>
+              </div>
+              <div class="spons-item small-size">
+                <a href="https://www.1517fund.com/">
+                  <img src="/static/sponsors/1517.png">
+                </a>
+              </div>
+              <div class="spons-item small-size">
+                <a href="https://flutterflow.io/">
+                  <img src="/static/sponsors/flutterflow.png">
+                </a>
+              </div>
+              <div class="spons-item small-size">
+                <a href="https://godechain.com/">
+                  <img src="/static/sponsors/godechain.png">
+                </a>
+              </div>
+              <div class="spons-item small-size">
+                <a href="https://www.voiceflow.com/">
+                  <img src="/static/sponsors/voiceflow.png">
+                </a>
+              </div>
+              <div class="spons-item small-size">
+                <a href="https://usac.ucla.edu/">
+                  <img src="/static/sponsors/usac.png">
+                </a>
+              </div>
+              <div class="spons-item small-size">
+                <a href="https://swcucla.org//">
+                  <img src="/static/sponsors/swc.png">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="live-footer-bottom">
+            <div class="social-media-bar">
+              <a class="no-color" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/lahacks/">
+                <img id="icon" src="/static/footer/instagram.svg">
+              </a>
+              <a class="no-color" target="_blank" rel="noopener noreferrer" href="https://twitter.com/lahacks">
+                <img id="icon" src="/static/footer/twitter.svg">
+              </a>
+              <a class="no-style" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/LAHacks/">
+                <img id="icon" src="/static/footer/facebook.svg">
+              </a>
+            </div>
+            <p class="live-footer-text">Made with ❤️ and 🦆 from LA Hacks 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    
+  </body>
 </html>
