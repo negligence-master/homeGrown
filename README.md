@@ -10,7 +10,7 @@ HomeGrown is a simple user interface with a few key functions:
 Our attention was captured by the nonprofit organizations that sought to combat the ["food deserts"](https://www.aecf.org/blog/exploring-americas-food-deserts) in certain high-crime communities through community gardens. We recognized gardening to be not just effective in reducing one's carbon footprint (by contributing less to the transportation of goods, and processed materials), but also as an important method to alleviate food insecurity and empower communities.
 
 ## Tools
-Replit was out primary platform because it allowed live collaboration, and one of our groupmates was having issues downloading VS code! Since most of us were beginners to web deb at our first hackathon, it seemed advantageous for us to practice pair programming in real time.
+Replit was out primary platform because it allowed live collaboration, and one of our groupmates was having issues downloading VS code! Since most of us were beginners to web deb at our first hackathon, it seemed advantageous for us to practice pair programming in real time. After completing our projct there, one groupmate transferred the zip to github.
 We also used Trefle, an API of native plants to get our data on plants.
 
 ## Demo
